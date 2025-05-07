@@ -18,7 +18,7 @@ function Login() {
           </div>
           <form className="needs-validation">
             <div className="form-group mb-2">
-              <label htmlFor="username" className="form-label">
+              <label htmlFor="username" className="username form-label">
                 {USERNAME_CONSTANT}
               </label>
               <Input
@@ -30,7 +30,7 @@ function Login() {
             </div>
 
             <div className="form-group mb-2">
-              <label htmlFor="password" className="form-label">
+              <label htmlFor="password" className="password form-label">
                 {PASSWORD_CONSTANT}
               </label>
               <Input.Password

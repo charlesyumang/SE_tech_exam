@@ -22,6 +22,11 @@
 }
 
 .submit {
-  margin-top: 15%;
+  margin-top: 60%;
   background-color: #36454f;
+}
+
+.username,
+.password {
+  margin-top: 5%;
 }
