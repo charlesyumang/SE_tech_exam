@@ -1,10 +1,15 @@
-// routes/AppRoutes.js
-import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { React, useEffect, useState } from "react";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Login from "../Login/Login";
 import Home from "../Home/Home";
 
-const AppRoutes = () => {
+const AppRoutes = ({ setPath }) => {
+  const location = useLocation();
+
+  useEffect(() => {
+    setPath(location.pathname);
+  }, [location.pathname]);
+
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/login" replace />} />
